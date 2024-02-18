@@ -1,4 +1,5 @@
-import { JiraTasks } from '../../components';
+import { JiraTasks } from "../../components";
+
 
 export const JiraPage = () => {
   return (
@@ -8,19 +9,12 @@ export const JiraPage = () => {
       <hr />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          
-          <JiraTasks title='Pendientes' value='pending' />
-          
-          <JiraTasks title='Avanzando' value='in-progress' />
-          
-          <JiraTasks title='Terminadas' value='done' />
+        <JiraTasks title="Pendientes" value="OPEN" />
 
+        <JiraTasks title="Avanzando" value="IN_PROGRESS" />
+
+        <JiraTasks title="Terminadas" value="DONE" />
       </div>
-
-      
-
-
-
     </>
   );
 };
