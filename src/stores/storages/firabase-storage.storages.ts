@@ -8,7 +8,7 @@ const FirabaseApi: StateStorage = {
       const data = await fetch(`${firabase}/${name}.json`).then((res) =>
         res.json()
       );
-      console.log(data);
+      
       return data;
     } catch (e) {
       console.log(e);
